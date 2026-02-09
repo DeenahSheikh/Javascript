@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let marks={
+    math:Number(prompt("Enter maths marks")),
+    science:Number(prompt("Enter science marks")),
+    english:Number(prompt("Enter english marks")),
+    hindi:Number(prompt("Enter hindi marks"))
+};
+let sum=0;
+for(let subject in marks){
+    sum+= marks[subject];
+}
+alert("Total = "+sum);
+    </script>
+</body>
+</html>
