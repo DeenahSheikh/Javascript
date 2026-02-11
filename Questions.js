@@ -34,7 +34,7 @@ console.log("Sum of odd numbers:", oddsum);
 //for-in loop average of 5 subjects
 
 let marks={A:90,B:70,C:60,D:80,E:90}
-let sum=0;
+let Sum=0;
 let count=0;
 
 for(let i in marks){
