@@ -1,0 +1,26 @@
+let student={
+    name:{
+        firstName:"Deenah",
+        lastName:"Sheikh",
+    },
+    Address:{
+        city:"Zirakpur",
+        State:"Punjab",
+        PostalCode:140603
+    },
+    Marksheet:{
+        tenth:91,
+        twelth:85,
+        Jee:7462,
+    },
+    Personal:{
+        Aadhar:12434545,
+        Branch:"CSE",
+        Rollno:3647782497,
+        Gender:"Female"
+    }
+}
+console.log(student.name);
+console.log(student.Address);
+console.log(student.Marksheet);
+console.log(student.Personal);
