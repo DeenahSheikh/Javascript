@@ -6,3 +6,6 @@ deepCopy.b.c=5;
 
 console.log(original.a);
 console.log(original.b.c);
+
+console.log(deepCopy.a);
+console.log(deepCopy.b.c);
