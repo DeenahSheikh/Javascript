@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo"></div>
+    <button onclick="changeContent()">Change Content</button>
+    <script>
+        function changeContent(){
+            let element= document.getElementById("demo");
+            element.textContent="Hello World using textContent";
+            element.style.color="white";
+            element.style.backgroundColor="blue";
+            element.style.fontSize="22px";
+            element.style.padding="10px";
+            element.style.border="2px solid black";
+            element.style.textAlign="center";
+        }
+    </script>
+</body>
+</html>

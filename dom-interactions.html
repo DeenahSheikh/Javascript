@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="content">
+    <h3>Welcome to Chitkara University</h3>
+    </div>
+
+    <div id="form">
+    Name:<br>
+    <input type="text" id="name"><br>
+    Class:<br>
+    <input type="text" id="class"><br>
+    Email:<br>
+    <input type="text" id="email"><br>
+    </div>
+    <div id="image"></div>
+    <button onclick="newtext()">Okay</button>
+    <button onclick="showImage()">Show</button>
+    <button onclick="changeContent()">Update</button>
+
+    <script>
+        function newtext(){
+            document.getElementById("content").innerText="<h2>This is the about section visible after clicking okay</h2>";
+        }
+
+        function showImage(){
+            document.getElementById("image").innerHTML =
+"<img src='pexels.jpg' alt='myimage'>";
+        }
+
+        function changeContent(){
+            let element= document.getElementById("form");
+            element.style.color="red";
+            element.style.backgroundColor="blue";
+            element.style.fontSize="10px";
+            element.style.padding="20px";
+            element.style.border="2px solid black";
+            element.style.textAlign="center";
+        }
+    </script>
+</body>
+</html>

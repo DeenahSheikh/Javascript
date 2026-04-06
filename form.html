@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label>Name:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label>Email ID:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label>Roll No:</label><br>
+        <input type="text" id="roll" name="roll"><br><br>
+
+        <button type="button" onclick="changes()">Submit</button>
+        <button type="button" onclick="another()">OK</button>
+    </form>
+
+    <script>
+        function changes(){
+            document.getElementById("name").style.color="blue";
+            document.getElementById("name").style.fontFamily="Arial, sans-serif";
+            document.getElementById("name").style.fontSize="40px";
+            document.getElementById("name").style.backgroundColor="Yellow";
+
+            document.getElementById("email").style.color="blue";
+            document.getElementById("email").style.fontFamily="Arial, sans-serif";
+            document.getElementById("email").style.fontSize="40px";
+            document.getElementById("email").style.backgroundColor="Yellow";
+
+            document.getElementById("roll").style.color="blue";
+            document.getElementById("roll").style.fontFamily="Arial, sans-serif";
+            document.getElementById("roll").style.fontSize="40px";
+            document.getElementById("roll").style.backgroundColor="Yellow";
+        }
+        function another(){
+            document.getElementById("name").style.color="red";
+            document.getElementById("name").style.fontFamily="Times New Roman";
+            document.getElementById("name").style.fontSize="30px";
+            document.getElementById("name").style.backgroundColor="Green";
+
+            document.getElementById("email").style.color="red";
+            document.getElementById("email").style.fontFamily="Times New Roman";
+            document.getElementById("email").style.fontSize="30px";
+            document.getElementById("email").style.backgroundColor="Green";
+
+            document.getElementById("roll").style.color="red";
+            document.getElementById("roll").style.fontFamily="Times New Roman";
+            document.getElementById("roll").style.fontSize="30px";
+            document.getElementById("roll").style.backgroundColor="Green";
+        }
+    </script>
+</body>
+</html>
