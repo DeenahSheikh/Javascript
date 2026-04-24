@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling Demo</title>
+<style>
+    .item{
+        padding:10px;
+        margin:5px;
+        border:1px solid black;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+    <div class="name">
+        <span id="firstName">First Name</span>
+        <span id="lastName">Last Name</span>
+    </div>
+
+    <div id="selling">
+        <h3>Selling Products</h3>
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+    </div>
+    
+    <div id="buying">
+        <h3>Buying Products</h3>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+    </div>
+
+    <script>
+        document.getElementById("firstName").addEventListener("click", function(){
+            this.style.color="red";
+        }, true);
+
+        document.getElementById("lastName").addEventListener("click", function(){
+            this.style.color="blue";
+        },true);
+
+        document.getElementById("selling").addEventListener("click", function(e){
+            if(e.target.classList.contains("item")){
+                e.target.style.backgroundColor="red";
+                e.target.style.color="yellow";
+            }
+        });
+
+        document.getElementById("buying").addEventListener("click", function(e){
+            if(e.target.classList.contains("item")){
+                if(e.target.textContent === "Item 3"){
+                    e.target.style.backgroundColor ="blue";
+                }
+                else{
+                    e.target.style.backgroundColor="green";
+                }
+            }
+        });
+    </script>
+</body>
+</html>
