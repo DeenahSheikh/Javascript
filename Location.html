@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Location Example</h2>
+    <button onclick="showLocation()">Show URL Info</button>
+    <button onclick="redirectPage()">Go to Google</button>
+    <p id="locationInfo"></p>
+
+    <script>
+        function showLocation(){
+            let data="";
+            data +="Full URL: "+ location.href + "<br>";
+            data +="Hostname: "+ location.hostname + "<br>";
+            data +="Path: "+ location.pathname;
+            document.getElementById("locationInfo").innerHTML=data;
+        }
+
+        function redirectPage(){
+            location.href="https://www.google.com";
+        }
+    </script>
+
+</body>
+</html>
