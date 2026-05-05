@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Alert and Dialog Example</h2>
+    <button onclick="showAlert()">Alert</button>
+    <button onclick="showConfirm()">Confirm</button>
+    <button onclick="showPrompt()">Prompt</button>
+    <p id="output"></p>
+    <script>
+        function showAlert(){
+            alert("This is an alert box!");
+        }
+        function showConfirm(){
+            let result=confirm("Do you want to continue?");
+            document.getElementById("output").innerHTML="Confirm Result: "+ result;
+        }
+        function showPrompt(){
+            let name= prompt("Enter your name:");
+            document.getElementById("output").innerHTML="Hello " + name;
+        }
+    </script>
+</body>
+</html>
